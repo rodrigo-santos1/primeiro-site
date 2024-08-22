@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Matemasie&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+.site {
+    position: relative;
+    width: 1000px;
+    height: auto;
+    margin: auto;
+}
+.topo {
+    position: relative;
+    width: 100%;
+    height: 150px;
+}
+.logo {
+    position: relative;
+    margin: auto;
+    height: 150px;
+    width: 448px;
+}
+.menu {
+    position: relative;
+    width: 100%;
+    height: 50px;
+}
+.menu ul {
+    display: flex;
+    justify-content: center;
+    /* OCULTAR ÍCONE DE MARCADOR DA LISTAR */
+    list-style: none;
+    /* RETIRAR O ESPAÇAMENTO DOS MARACDORES DA LISTA  */
+    padding-left: 0;  
+    margin: 0;
+}
+.menu ul li a {
+    float: left;
+    padding: 15px 30px;
+    color: inherit;
+    text-decoration: none;
+    border-radius: 15px;
+}
+/* HOUVER: efeito de passar o mouse sobre o elemento */
+.menu ul li a:hover {
+    background-color: aliceblue;
+    color: rgb(5, 90, 90);
+    transition: 0.8s;
+}
+.banner {
+    position: relative;
+    width: 100%;
+    height: 464.34px;
+    background: url("../imagens/banner.webp") center;
+    background-size: cover;
+    /* Transforma o elemento para flexível */
+    display: flex;
+    /* Centraliza o conteúdo horizontalmente */
+    justify-content: center;
+    /* Centraliza o conteúdo verticalmente */
+    align-items: center;
+    /* Alinha os elementos na vertical */
+    flex-direction: column;
+}
+.banner h1, .banner p {
+    margin: 0;
+    color: white;
+}
+.fundo-banner {
+    background-color: rgb(0, 0, 0, 0.6);
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.conteudo {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    /* Duas medidas no margin: eixo vertical e eixo hrizontal */
+    margin: 50px 0;
+}
+.box {
+    position: relative;
+    width: 300px;
+    height: 650px;
+    float: left;
+    margin-right: 50px;
+    border: 1px black solid;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: -50px 40px 90px rgb(167, 166, 166);
+}
+.box:hover {
+    transform: scale(1,2);
+    transform: rotate(360deg);
+    box-shadow: 0px 0px 0px cyan;
+    cursor: pointer;
+    transition: 3.5s;
+}
+.box img {
+    width: 100%;
+    height: auto; 
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+/* PEGA TODAS AS IMAGENS DENTRO DA DIV BOX */
+.box:last-child {
+    margin-right: 0;
+}
+.box h2, .box p {
+    padding: 10px;
+    margin: 0;
+}
+.box h2 { 
+    text-align: center;
+    font-family: "Matemasie", sans-serif;
+}
+.rodape {
+    position: relative;
+    width: 100%;
+    height: 150px;
+    background-color: darkblue;
+}
+.rodape-coluna {
+    position: relative;
+    width: 33%;
+    height: 150px;
+    float: left;
+}
+.rodape-coluna ul {
+    list-style: none;
+    padding-left: 0;
+}
+.rodape-coluna ul li a {
+    color: white;
+    text-decoration: none;
+}
+.lista-rodape li {
+    margin-bottom: 10px;
+}
+.icones-rodape li {
+    float: left;
+    font-size: 25px;
+    margin-right: 10px;
+}
+.icones-rodape li a {
+    padding: 10px;
+    background-color: rgb(245, 241, 241);
+    color: darkblue !important;
+}
+.icones-rodape li a:hover {
+    border-radius: 10px;
+    transition: 0.5s;
+}
